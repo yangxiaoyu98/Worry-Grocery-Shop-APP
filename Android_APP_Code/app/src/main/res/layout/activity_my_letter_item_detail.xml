@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    tools:context="com.example.worrygroceryshop.activity.MyLetterItemDetailActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#DDAFAF">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/back"
+            android:background="@android:color/transparent" />
+        <ImageView
+            android:id="@+id/put_back_letter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="240dp"
+            android:src="@mipmap/delete_letter"
+            android:background="@android:color/transparent" />
+        <TextView
+            android:id="@+id/putOutTree"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="280dp"
+            android:text="移出树洞"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ss12">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/hole_letter_writer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="10dp"
+                        android:text="来自:#一颗豆Zi#"
+                        android:textColor="@color/black_deep"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/checkReplyLetter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看回信"
+                        android:layout_marginTop="5dp"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:textColor="#a5e216"
+                        android:layout_marginLeft="160dp"/>
+                </LinearLayout>
+
+                <!--虚线-->
+                <ImageView
+                    android:id="@+id/xuxian"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:src="@mipmap/xuxian" />
+
+                <TextView
+                    android:id="@+id/hole_letter_words"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="          大家好！时光飞逝，转眼我们将迎来2018年。在这里，我向全国各族人民，向香港特别行政区同胞、澳门特别行政区同胞、台湾同胞和海外侨胞致以新年的祝福！我也祝愿世界各国各地区的朋友们万事如意！
+　　天道酬勤，日新月异。2017年，我们召"
+                    android:textColor="@color/smssdk_black"
+                    android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/hole_letter_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2018-5-23 16:24:41"
+                    android:layout_marginLeft="180dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="100dp"
+                    android:textColor="@color/black_deep"/>
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/deleteMyLetter"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="删   除"
+            android:background="@drawable/shape6"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="100dp" />
+    </FrameLayout>
+</LinearLayout>
